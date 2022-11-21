@@ -1,0 +1,583 @@
+
+:root{ 
+    --mainBg: #121212;
+    --maincl: #fff;
+    --footerbg: #121212a8;
+    --dimcl: #000000ce;
+}
+
+body{ 
+    overflow-x: hidden;
+    background: var(--mainBg);
+    color: var(--maincl);
+}
+
+::selection{ 
+    background: white;
+    color: black;
+}
+
+.hero-image {
+    background-image:url('https://cdn.vox-cdn.com/thumbor/s3AsF2kLAo350xTuRsw7lxgs2Qg=/0x0:2000x1333/1200x800/filters:focal(840x507:1160x827)/cdn.vox-cdn.com/uploads/chorus_image/image/55188531/hawaiian_pizza_sh.0.jpg');
+    height: 100vh;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name_one { 
+    color: white;
+}
+
+#aboutheader {
+    text-align:center;
+    font-weight:bold;
+    color:white;
+}
+
+.sqiz { 
+    padding: 40px;
+    height: 100%;
+    top:0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000a1;
+    flex-direction: column;
+}
+
+.bold_te {
+    color:yellow;
+    font-weight:bold;
+    font-size: 80px;
+}
+#hero2 {
+    color:yellow;
+}
+#aboutmessage {
+    font-size:50px;
+    font-family:cursive;
+    color:white;
+}
+span {
+    font-weight:bold;
+    font-style:normal;
+}
+.container {
+    padding:20px;
+}
+.card-img-top{
+    background:white;
+}
+
+a { 
+    text-decoration:none;
+}
+
+.atag { 
+    gap:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.atag a { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaeae9;
+    padding:10px;
+    border-radius: 5px;
+    color: #121212;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #eaeaea;
+    
+}
+
+.atag a:hover { 
+    color: #121212;
+    opacity: 0.8;
+    box-shadow: 0 0 5px #1212121e;
+}
+    
+
+.atag a::before{ 
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    background: #121212;
+    height: 5px;
+    transition: .3s ease-in-out;
+    transform: scale(0);
+    transform-origin: left;
+}
+
+.atag a:hover::before{ 
+    width: 100%;
+    transform: scale(1);
+    transform-origin: right;
+}
+
+.name_one { 
+    font-size: 20px;
+    gap:10px;
+    margin-right: 10px;
+    color: #121212;
+}
+
+.atag i { 
+    display: none;
+}
+
+.dimmer { 
+    display: none;
+}
+
+.bars { 
+    display: none;
+}
+
+#navbarNavAltMarkup { 
+    position: relative;
+}
+
+#navbarNavAltMarkup label { 
+    position: absolute;
+    top:10px;
+    left: 15px;
+    text-align: center;
+}
+
+#navbarNavAltMarkup input { 
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 2px 0px 5px #0000002d;
+    outline: none;
+    padding-left: 40px;
+}
+
+nav{ 
+    justify-content: space-around;
+    z-index: 1000000000000000000000;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+.other_b { 
+    color: white;;
+}
+
+.mycard img { 
+ width: 100%;
+ height: 300px;
+ object-fit: cover;
+
+}
+
+.mycard { 
+    background: red;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.row { 
+    gap:5px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1300px;
+    padding:40px;
+}
+
+.text_mycard { 
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#bgimag { 
+    background-image: url('https://img.freepik.com/premium-photo/pepperoni-pizza-with-ingredients-stone-background_156140-7062.jpg?w=2000');
+    background-position:center;
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid var(--mainBg);
+    transition: all .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    color: var(--maincl);
+}
+
+
+#bgimag:hover{ 
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--maincl);
+}
+
+
+#bgimag1 { 
+    background-image: url('https://i.pinimg.com/736x/fa/3b/ba/fa3bba04f20b1efe9b362b06825ed32d.jpg');
+    background-position:center;
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid var(--mainBg);
+    transition: all .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    color: var(--maincl);
+}
+
+
+#bgimag1:hover{ 
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--maincl);
+}
+
+
+#bgimag2 { 
+    background-image: url('https://cdn.winsightmedia.com/platform/files/public/2019-09/background/SchwannsPhilly%20Cheesesteak%20Pizza_1568299409.png?VersionId=cZ0uvOvaGMxWz1Pl_5wyE1rDATwv03en');
+    background-position:center;
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid var(--mainBg);
+    transition: all .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    color: var(--maincl);
+}
+
+
+#bgimag2:hover{ 
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--maincl);
+}
+
+
+#bgimag3 { 
+    background-image: url('https://img.cdn4dd.com/p/fit=cover,width=1200,height=1200,format=auto,quality=50/media/photos/3e6b801b-130a-4bc2-b1dd-25fddfe509ea-retina-large.jpg');
+    background-position:center;
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid var(--mainBg);
+    transition: all .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    color: var(--maincl);
+}
+
+
+#bgimag3:hover{ 
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--maincl);
+}
+
+
+footer{ 
+    text-align: center;
+    background: var(--footerbg);
+    border-top: 1px solid #eaeae97a;
+    padding:10px;
+}
+
+footer input { 
+    width: 100%;
+}
+
+.combiner { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.first_part { 
+    flex-wrap: 1 1 40rem;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    width: 100%;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+.first_part  a { 
+    padding: 10px;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    flex: 1 1 10rem;
+     color: var(--maincl);
+}
+
+.first_part  a:first-child{ 
+    background: blue;
+    color: white;
+}
+
+.first_part  a:nth-child(2){ 
+    background: green;
+    color: white;
+}
+
+
+.first_part  a:nth-child(3){ 
+    background: skyblue;
+    color: white;
+}
+
+.first_part  a:nth-child(4){ 
+    background-image: linear-gradient(to bottom, rgb(248, 179, 179), #ca4259);
+    color: white;
+}
+
+.first_part  a:nth-child(5){ 
+    background: white;
+    color: black;
+}
+
+.first_part  a:nth-child(6){ 
+    background: red;
+    color: white;
+}
+
+.first_part  a i { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second_part { 
+    flex:  1  1 40rem;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.second_part input { 
+    width: 100%;
+    padding:10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.second_part form { 
+    width: 100%;
+    max-width: 400px;
+}
+
+#removesidebar { 
+    color: red;
+}
+
+#navbarNavAltMarkup i { 
+    color: black;
+}
+
+#bor { 
+    margin-top: 100px;
+}
+
+/* CHECK OUT */
+
+.container form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.container { 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cols1 { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .first_part { 
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+
+    .tools { 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bold_te { 
+        font-size: 50px;
+    }
+
+    .titles { 
+        display: none;
+    }
+
+    nav{ 
+        justify-content: space-between;
+    }
+
+    #navbarNavAltMarkup { 
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .atag { 
+        position: fixed;
+        top:0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        z-index: 1000000000;
+        height: 100vh;
+        background: var(--mainBg);
+        right: -200%;
+        width: 250px;
+        padding:10px;
+        overflow: auto;
+        overflow-x: hidden;
+        transition: .3s ease-in-out;
+    
+    }
+
+    .atag.active { 
+        right: 0;
+    }
+
+
+    .dimmer{ 
+        display: block;
+        position: fixed;
+        top:0;
+        left: 0;
+        background: var(--dimcl);
+        width: 100%;
+        height: 100%;
+        z-index: 50000000;
+        transition: .3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .dimmer.dim { 
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .atag i { 
+        display: block;
+        font-size: 20px;
+        text-align: left;
+        width: 100%;
+        padding:10px;
+        height: 3rem;
+        width: 3rem;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .atag a { 
+        display: block;
+        width: 100%;
+        border-radius: 0;
+        background: none;
+        color: white;
+        border: none;
+    }
+
+    .atag a:hover{ 
+        color: white;
+    }
+
+    .bars { 
+        display: block;
+        cursor: pointer;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #navbarNavAltMarkup{ 
+        max-width: 250px;
+    }
+
+    #bgimag { 
+        width: 100%;    }
+
+    .row { 
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    #navbarNavAltMarkup{ 
+        max-width: 200px;
+    }
+}
+
+.card {
+    background:black;
+    border-radius: 3rem;
+    
+}
+
+
+    
